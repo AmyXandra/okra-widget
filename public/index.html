@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okra Widget</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <script>
+    const options = {
+      env: "production",
+      token: "qwdnoufe3180u814001408jf",
+      key: "1308hf301h83f1iweg0jhe",
+      country: "NG",
+      payment: true,
+      charge: {
+        amount: 100000,
+        currency: "ngn",
+      },
+    };
+    window.onload = function () {
+      const client = new okra.create();
+      client.open(options);
+    };
+  </script>
+</html>
